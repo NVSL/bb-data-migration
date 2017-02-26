@@ -31,7 +31,7 @@ archive=./.freezer_staging/$archive_file
 
 tar -p -v -c -j -f  $archive $victim  2> $archive.manifest || die "Creating tar ball"
 
-$md5 $archive > $archive.md5sum
+$md5 $archive | cut -f  1 -d " " > $archive.md5sum
 
 $GDRIVE upload --parent $DRIVE_ROOT_DIRECTORY $archive --name $victim.tbz || die "Uploading archive"
 $GDRIVE upload --parent $DRIVE_ROOT_DIRECTORY $archive.md5sum --name $victim.md5sum.txt || die "Uploading md5sum"
@@ -43,7 +43,7 @@ archive_id=$($GDRIVE list --query "'$DRIVE_ROOT_DIRECTORY' in parents and name =
 #echo $GDRIVE info $archive_id \| grep Md5sum \|cut -f 2 -d ' '
 remote_md5=$($GDRIVE info $archive_id | grep Md5sum |cut -f 2 -d ' ')
 
-#echo $remote_md5 != $(cat $archive.md5sum)
+echo $remote_md5 != $(cat $archive.md5sum)
 
 if [ $remote_md5 != $(cat $archive.md5sum) ]; then
     die "Checksums don't match"
