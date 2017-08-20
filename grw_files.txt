@@ -1,0 +1,17 @@
+/grw/arsenal-tools
+/grw/ARSENALREPO
+/grw/benchmark
+/grw/classes
+/grw/cvsroot
+/grw/cvsroot-papers
+/grw/git
+/grw/Gordon
+/grw/kernels
+/grw/photos
+/grw/raw-global-toolchain
+/grw/sdvbs-svn
+/grw/sod-svn
+/grw/svn
+/grw/tapeouts
+/grw/temp
+

@@ -1,0 +1,15 @@
+/gro/ gro
+
+/gro/cad/arm180
+/gro/cad/arm250
+/gro/cad/artisan
+/gro/cad/eagle-7.2.0
+/gro/cad/extra-docs-we-downloaded
+/gro/cad/license
+/gro/cad/mentor
+/gro/cad/mosis
+/gro/cad/mosis-restricted
+/gro/cad/saed
+/gro/cad/synopsys
+/gro/cad/tsmc
+/gro/cad/umc
