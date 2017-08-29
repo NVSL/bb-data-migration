@@ -1,5 +1,5 @@
-/mnt/lvm/nbu nbu
-/mnt/lvm/nbu/nbu/ipmi_tools
-/mnt/lvm/nbu/nbu/mbt
-/mnt/lvm/nbu/nbu/Python-3.3.3
-/mnt/lvm/nbu/nbu/synopsys
+/ nbu
+/nbu/ipmi_tools
+/nbu/mbt
+/nbu/Python-3.3.3
+/nbu/synopsys

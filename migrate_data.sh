@@ -12,22 +12,25 @@ function clone() {
      touch logs/$log_name.running
      echo STARTING RSYNC
      date
-     if echo rsync -avHAXER --delete $src $dst ; then
+     cmd="rsync -avHAER --delete $src $dst"
+     echo $cmd >/dev/tty
+     if $cmd; then
 	 mv logs/$log_name.running logs/$log_name.done
      else
 	 mv logs/$log_name.running logs/$log_name.crashed
      fi
      date
-    ) #2>&1 >> ./logs/$log_name.log
+    ) 2>&1 >> ./logs/$log_name.log
     
 }
 
 cat $1 | (
     read root dst;
-    echo root=$root
-    echo dst=$dst
+    #echo root=$root
+    #echo dst=$dst
     
     while read x; do
-	clone $x /sdsc/
+        src=$root./${x#$root}
+	clone $src /sdsc/ 
     done
 )

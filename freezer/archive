@@ -24,6 +24,11 @@ fi
 	
 victim=$1
 
+test -e $i || die "$victim doesn't exist"
+test -d $i || die "We can only archive directories"
+
+victim=$(echo $victim |perl -ne 's/\/$//g;print')
+echo $victim
 mkdir -p $STAGING_AREA
 
 archive_file=$RANDOM.tbz
@@ -49,5 +54,5 @@ if [ $remote_md5 != $(cat $archive.md5sum) ]; then
     die "Checksums don't match"
 fi
 
-rm -rf $victim
+#rm -rf $victim
 rm -rf $STAGING_AREA

@@ -1,4 +1,4 @@
-/gro gro
+/ gro
 /gro/Altera
 /gro/altera
 /gro/bb-cluster-admin

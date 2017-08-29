@@ -1,9 +1,9 @@
-/mnt/lvm/nbu nbu_async
-/mnt/lvm/nbu/nbu_async/gro
-/mnt/lvm/nbu/nbu_async/j9singh
-/mnt/lvm/nbu/nbu_async/luzh
-/mnt/lvm/nbu/nbu_async/mbt
-/mnt/lvm/nbu/nbu_async/ngouldin
-/mnt/lvm/nbu/nbu_async/swanson
-/mnt/lvm/nbu/nbu_async/vega
-/mnt/lvm/nbu/nbu_async/zhuangh
+/ nbu_async
+/nbu_async/gro
+/nbu_async/j9singh
+/nbu_async/luzh
+/nbu_async/mbt
+/nbu_async/ngouldin
+/nbu_async/swanson
+/nbu_async/vega
+/nbu_async/zhuangh

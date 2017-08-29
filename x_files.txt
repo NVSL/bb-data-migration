@@ -1,5 +1,5 @@
-/mnt/lvm/x/ x
-/mnt/lvm/x/AdminTemp
-/mnt/lvm/x/CloneZillaImages
-/mnt/lvm/x/FAST2012-NVP
-/mnt/lvm/x/Hadoop
+/ x
+/x/AdminTemp
+/x/CloneZillaImages
+/x/FAST2012-NVP
+/x/Hadoop
